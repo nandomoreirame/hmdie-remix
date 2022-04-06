@@ -21,8 +21,6 @@ export default function Index() {
         <strong>clockify</strong>, etc.
       </Description>
 
-      <CalculateForm handleResult={getResult} />
-
       {result && (
         <Result>
           {/* <ResultTitle>Resultado:</ResultTitle> */}
@@ -37,6 +35,8 @@ export default function Index() {
           </ResultItem>
         </Result>
       )}
+
+      <CalculateForm handleResult={getResult} />
 
       <Footer />
     </Wrapper>

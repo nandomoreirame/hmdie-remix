@@ -37,8 +37,14 @@ export function CalculateForm({ handleResult }: CalculateFormProps): React.React
 
   const handleChangeHours = (event: React.ChangeEventHandler<HTMLInputElement>) => {
     const { value } = inputHours.current;
-    const match = value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,2})/);
-    const formattedValue = !match[2] ? match[1] : `${match[1]}:${match[2]}`;
+    const match1 = value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,2})/);
+    const match2 = value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,2})/);
+
+    let formattedValue = !match1[2] ? match1[1] : `${match1[1]}:${match1[2]}`;
+
+    if (match1['input'].length >= 4) {
+      formattedValue = !match2[2] ? match2[1] : `${match2[1]}:${match2[2]}`;
+    }
 
     inputHours.current.value = formattedValue;
 
