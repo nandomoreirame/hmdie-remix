@@ -154,7 +154,20 @@ export const FooterWrapper = styled.footer`
     font-size: 14px;
   }
 
+  a {
+    text-decoration: none;
+    border-bottom: 1px solid #4b5d68;
+    transition: background-color 0.12s ease-in-out, color 0.12s ease-in-out;
+
+    &:focus,
+    &:hover {
+      background-color: #4b5d68;
+      color: #fff;
+    }
+  }
+
   address {
     display: inline-block;
+    font-style: normal;
   }
 `;

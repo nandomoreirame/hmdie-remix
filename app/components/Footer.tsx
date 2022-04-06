@@ -8,7 +8,11 @@ export function Footer(): React.ReactElement {
         Desenvolvido em <address>Curitiba-PR, Brasil.</address>
       </p>
       <p>
-        Com ♡ por{' '}
+        Com 🤎 e{' '}
+        <a href="https://remix.run" target="_blank" rel="noreferrer">
+          Remix
+        </a>{' '}
+        por{' '}
         <a href="https://nandomoreira.dev/?ref=hmdie-remix" target="_blank" rel="noreferrer">
           Fernando Moreira
         </a>
