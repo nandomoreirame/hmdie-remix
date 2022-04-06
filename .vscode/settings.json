@@ -1,0 +1,35 @@
+{
+  "todo-tree.tree.scanMode": "workspace",
+  "todo-tree.highlights.customHighlight": {
+    "[ ]": {
+      "background": "#760000"
+    },
+    "[x]": {
+      "background": "#01b101"
+    }
+  },
+  "editor.renderWhitespace": "all",
+  "eslint.alwaysShowStatus": true,
+  "files.trimTrailingWhitespace": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "search.exclude": {
+    "**/build": true,
+    "**/public": true,
+    "**/node_modules": true
+  },
+  "files.exclude": {
+    "**/build": true,
+    "**/node_modules": true
+  },
+  "rpc.enabled": true
+}
